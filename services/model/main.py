@@ -1,16 +1,17 @@
-import random
-import pandas as pd
-import numpy as np
-import pickle
-from sklearn.tree import DecisionTreeRegressor
-from fastapi import FastAPI
-from pydantic import BaseModel
 import json
+import pickle
+import random
 import sys
+
 import nltk
-from tensorflow.keras.models import load_model
-from nltk.stem import WordNetLemmatizer
+import numpy as np
+import pandas as pd
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from nltk.stem import WordNetLemmatizer
+from pydantic import BaseModel
+from sklearn.tree import DecisionTreeRegressor
+from tensorflow.keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
 nltk.download("punkt")
