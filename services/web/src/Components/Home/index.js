@@ -202,7 +202,7 @@ export const Home = ({ history }) => {
                     patient.isVaccinated ? patient.count : 0
                   ),
                   borderColor: "#00e600",
-                  backgroundColor: "#b3ffb3",
+                  backgroundColor: "#66ff66",
                 },
                 {
                   label: "#patients scheduled for vaccination",
@@ -210,14 +210,14 @@ export const Home = ({ history }) => {
                     !patient.isVaccinated ? patient.count : 0
                   ),
                   borderColor: "#ff4d4d",
-                  backgroundColor: "#ffb3b3",
+                  backgroundColor: "#ff6666",
                 },
               ],
             }}
             options={{
               legend: {
                 labels: {
-                  fontColor: "white",
+                  // fontColor: "white",
                   fontSize: 18,
                 },
               },
@@ -225,7 +225,7 @@ export const Home = ({ history }) => {
                 yAxes: [
                   {
                     ticks: {
-                      fontColor: "white",
+                      // fontColor: "white",
                       fontSize: 18,
                       beginAtZero: true,
                     },
