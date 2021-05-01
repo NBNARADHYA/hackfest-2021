@@ -14,7 +14,7 @@ export const sendMail = async ({ to, html, subject }: EmailProps) => {
       user: process.env.SMTP_USER!,
       pass: process.env.SMTP_PASS!,
     },
-    ignoreTLS: Boolean(process.env.SMTP_IGNORE_TLS),
+    // ignoreTLS: Boolean(process.env.SMTP_IGNORE_TLS),
   });
 
   await transporter.sendMail({

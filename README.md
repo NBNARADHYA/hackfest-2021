@@ -1,26 +1,10 @@
 # Covid Vaccine Distribution System
 
-![GitHub Actions](https://github.com/NBNARADHYA/covid-vaccine-distribution/actions/workflows/deploy.yml/badge.svg)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/be01e56c-1eac-4a73-9aee-57dd9be3af0f/deploy-status)](https://app.netlify.com/sites/covidvaccinedistribution/deploys)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## Working Demo
+## Project presentation and Live Demo
 
-1. Home page with all the stats and trends.
-
-   ![Home page demo](workingDemo/homePage.gif)
-
-2. User(patient) signing up and registering for the vaccination.
-
-   ![User Actions](workingDemo/user.gif)
-
-3. Super user (vaccination production center) dispatches a new batch of vaccines
-
-   ![Super user actions](workingDemo/superUser.gif)
-
-4. Admin (vaccination center) schedules time slots for those patients who have be prioritized by the super user and dispatched vaccines.
-
-   ![Admin actions](workingDemo/admin.gif)
+It can be viewed on YouTube [HERE](https://youtu.be/z92IZQF5epA)
 
 ## Contributing Guidelines
 
@@ -34,21 +18,21 @@
 2. Clone your forked repo to your local machine:
 
 ```
-git clone https://github.com/NBNARADHYA/covid-vaccine-distribution.git (https)
+git clone https://github.com/NBNARADHYA/hackfest-2021.git (https)
 ```
 
 or
 
 ```
-git clone git@github.com:NBNARADHYA/covid-vaccine-distribution.git (ssh)
+git clone git@github.com:NBNARADHYA/hackfest-2021.git (ssh)
 ```
 
 This will make a copy of the code to your local machine.
 
-3. Change directory to `covid-vaccine-distribution`.
+3. Change directory to `hackfest-2021`.
 
 ```
-cd covid-vaccine-distribution
+cd hackfest-2021
 ```
 
 4. Check the remote of your local repo by:
@@ -60,45 +44,45 @@ git remote -v
 It should output the following:
 
 ```
-origin	https://github.com/<username>/covid-vaccine-distribution.git (fetch)
-origin	https://github.com/<username>/covid-vaccine-distribution.git (push)
+origin	https://github.com/<username>/hackfest-2021.git (fetch)
+origin	https://github.com/<username>/hackfest-2021.git (push)
 ```
 
 or
 
 ```
-origin	git@github.com:<username>/covid-vaccine-distribution.git (fetch)
-origin	git@github.com:<username>/covid-vaccine-distribution.git (push)
+origin	git@github.com:<username>/hackfest-2021.git (fetch)
+origin	git@github.com:<username>/hackfest-2021.git (push)
 ```
 
 Add upstream to remote:
 
 ```
-git remote add upstream https://github.com/NBNARADHYA/covid-vaccine-distribution.git (https)
+git remote add upstream https://github.com/NBNARADHYA/hackfest-2021.git (https)
 ```
 
 or
 
 ```
-git remote add upstream git@github.com:NBNARADHYA/covid-vaccine-distribution.git (ssh)
+git remote add upstream git@github.com:NBNARADHYA/hackfest-2021.git (ssh)
 ```
 
 Running `git remote -v` should then print the following:
 
 ```
-origin	https://github.com/<username>/covid-vaccine-distribution.git (fetch)
-origin	https://github.com/<username>/covid-vaccine-distribution.git (push)
-upstream	https://github.com/NBNARADHYA/covid-vaccine-distribution.git (fetch)
-upstream	https://github.com/NBNARADHYA/covid-vaccine-distribution.git (push)
+origin	https://github.com/<username>/hackfest-2021.git (fetch)
+origin	https://github.com/<username>/hackfest-2021.git (push)
+upstream	https://github.com/NBNARADHYA/hackfest-2021.git (fetch)
+upstream	https://github.com/NBNARADHYA/hackfest-2021.git (push)
 ```
 
 or
 
 ```
-origin	git@github.com:<username>/covid-vaccine-distribution.git (fetch)
-origin	git@github.com:<username>/covid-vaccine-distribution.git (push)
-upstream	git@github.com:NBNARADHYA/covid-vaccine-distribution.git (fetch)
-upstream	git@github.com:NBNARADHYA/covid-vaccine-distribution.git (push)
+origin	git@github.com:<username>/hackfest-2021.git (fetch)
+origin	git@github.com:<username>/hackfest-2021.git (push)
+upstream	git@github.com:NBNARADHYA/hackfest-2021.git (fetch)
+upstream	git@github.com:NBNARADHYA/hackfest-2021.git (push)
 ```
 
 ## Dev Setup
@@ -112,7 +96,7 @@ upstream	git@github.com:NBNARADHYA/covid-vaccine-distribution.git (push)
 
 #### Steps
 
-1. Make sure you are in the root of the project (i.e., `./covid-vaccine-distribution/` folder).
+1. Make sure you are in the root of the project (i.e., `./hackfest-2021/` folder).
 2. Setup environement variables in `.env` files of all `services` and `root` according to `.example.env` files.
 3. Run `docker-compose up` to spin up the containers.
 4. The website would then be available locally at `http://localhost:WEB_PORT/`. (`WEB_PORT` in `.env`)

@@ -217,7 +217,6 @@ export const Home = ({ history }) => {
             options={{
               legend: {
                 labels: {
-                  // fontColor: "white",
                   fontSize: 18,
                 },
               },
@@ -225,7 +224,6 @@ export const Home = ({ history }) => {
                 yAxes: [
                   {
                     ticks: {
-                      // fontColor: "white",
                       fontSize: 18,
                       beginAtZero: true,
                     },
@@ -237,7 +235,6 @@ export const Home = ({ history }) => {
                 xAxes: [
                   {
                     ticks: {
-                      fontColor: "white",
                       fontSize: 14,
                     },
                     gridLines: {
