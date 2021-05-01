@@ -1,36 +1,37 @@
-import React, { useContext } from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
+import Button from "@material-ui/core/Button";
+import {makeStyles} from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import { Link, useHistory, useLocation } from "react-router-dom";
-import { AccessTokenContext } from "../../Contexts/AccessToken";
+import React, {useContext} from "react";
+import {Link, useHistory, useLocation} from "react-router-dom";
+
+import {AccessTokenContext} from "../../Contexts/AccessToken";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-  link: {
-    textDecoration: "none",
-    color: "white",
-  },
-  login: {
-    fontSize: "20px",
-  },
-}));
+                               root : {
+                                 flexGrow : 1,
+                               },
+                               menuButton : {
+                                 marginRight : theme.spacing(2),
+                               },
+                               title : {
+                                 flexGrow : 1,
+                               },
+                               link : {
+                                 textDecoration : "none",
+                                 color : "white",
+                               },
+                               login : {
+                                 fontSize : "20px",
+                               },
+                             }));
 
 export const Header = () => {
   const history = useHistory();
   const classes = useStyles();
   const location = useLocation();
-  const { accessToken, setAccessToken } = useContext(AccessTokenContext);
+  const {accessToken, setAccessToken} = useContext(AccessTokenContext);
 
   return (
     <div className={classes.root}>
@@ -42,19 +43,19 @@ export const Header = () => {
             </Link>
           </Typography>
           <Button
-            color="inherit"
+  color = "inherit"
             className={classes.login}
             onClick={async () => {
-              if (accessToken) {
-                setAccessToken(null);
-                await fetch(`${process.env.REACT_APP_SERVER}/auth/logout`, {
-                  method: "POST",
-                  credentials: "include",
-                });
-                history.push("/");
-              } else {
-                history.push("/auth/login");
-              }
+    if (accessToken) {
+      setAccessToken(null);
+      await fetch(`${process.env.REACT_APP_SERVER}/auth/logout`, {
+        method : "POST",
+        credentials : "include",
+      });
+      history.push("/");
+    } else {
+      history.push("/auth/login");
+    }
             }}
           >
             {accessToken
