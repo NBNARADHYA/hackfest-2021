@@ -20,6 +20,8 @@ nlpModel = load_model("chatbot_model.h5")
 intents = json.loads(open("intents.json").read())
 words = pickle.load(open("words.pkl", "rb"))
 classes = pickle.load(open("classes.pkl", "rb"))
+
+
 class PatientDetails(BaseModel):
     sex: int
     patientType: int
@@ -42,8 +44,10 @@ class PatientDetails(BaseModel):
     ageBand: int
     deltaDate: int
 
+
 class Message(BaseModel):
     msg: str
+
 
 column_names = ['sex', 'patient_type', 'intubed', 'pneumonia', 'pregnancy',
                 'diabetes', 'copd', 'asthma', 'inmsupr', 'hypertension',
@@ -63,12 +67,16 @@ def get_score(filename, X):
     score = model.predict(X)
     return score
 
+
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
-    sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
+    sentence_words = [lemmatizer.lemmatize(
+        word.lower()) for word in sentence_words]
     return sentence_words
 
 # return bag of words array: 0 or 1 for each word in the bag that exists in the sentence
+
+
 def bow(sentence, words, show_details=True):
     # tokenize the pattern
     sentence_words = clean_up_sentence(sentence)
@@ -107,6 +115,7 @@ def getResponse(ints, intents_json):
             break
     return result
 
+
 app = FastAPI()
 
 origins = [
@@ -121,6 +130,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 @app.post("/score/")
 async def get_covid_score(inputs: PatientDetails):
@@ -137,21 +147,22 @@ async def get_covid_score(inputs: PatientDetails):
         "death_prob": death_prob[0]
     }
 
+
 @app.post("/bot/")
 async def get_bot_response(req: Message):
-    msg=getattr(req, 'msg')
+    msg = getattr(req, 'msg')
     # checks is a user has given a name, in order to give a personalized feedback
     if msg.startswith('my name is'):
         name = msg[11:]
         ints = predict_class(msg, nlpModel)
         res1 = getResponse(ints, intents)
-        res =res1.replace("{n}",name)
+        res = res1.replace("{n}", name)
     elif msg.startswith('hi my name is'):
         name = msg[14:]
         ints = predict_class(msg, nlpModel)
         res1 = getResponse(ints, intents)
-        res =res1.replace("{n}",name)
-    #if no name is passed execute normally
+        res = res1.replace("{n}", name)
+    # if no name is passed execute normally
     else:
         ints = predict_class(msg, nlpModel)
         res = getResponse(ints, intents)
