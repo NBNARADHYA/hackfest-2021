@@ -21,24 +21,13 @@
         "Hi, how can I help you?",
         "Hi, I would love to help you."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "goodbye",
-      "patterns": [
-        "bye",
-        "good bye",
-        "see you later"
-      ],
-      "responses": [
-        "have a nice time.",
-        "bye bye."
-      ],
-      "context": [
-        ""
-      ]
+      "patterns": ["bye", "good bye", "see you later"],
+      "responses": ["have a nice time.", "bye bye."],
+      "context": [""]
     },
     {
       "tag": "thanks",
@@ -59,23 +48,17 @@
         "you're welcome",
         "My pleasure"
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "no_answer",
-      "patterns": [
-        ""
-      ],
+      "patterns": [""],
       "responses": [
         "Sorry, I didn't understand you.",
         "Please give me more info.",
         "Not sure I understand that."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "ask_name",
@@ -88,25 +71,17 @@
       "responses": [
         "I'm Covid-19 Vaccine Distribution Bot. You can ask me anything related to the vaccines and the vaccination process"
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "name",
-      "patterns": [
-        "my name is ",
-        "I'm ",
-        "I am"
-      ],
+      "patterns": ["my name is ", "I'm ", "I am"],
       "responses": [
         "Oooh great to meet you {n}. Please let me know if I can help you.",
         "Great! How may I assist you {n}",
         "Oh, I'll keep that in mind {n}."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "covid_info",
@@ -122,9 +97,7 @@
         "In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases",
         "COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "covid_symptoms",
@@ -141,9 +114,7 @@
         "Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. ",
         "Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "spread",
@@ -160,9 +131,7 @@
         "People can catch COVID-19 from others who have the virus. The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales. ",
         "People can also catch COVID-19 if they breathe in droplets from a person with COVID-19 who coughs out or exhales droplets. This is why it is important to stay more than 1 meter (3 feet) away from a person who is sick."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "transmission_medium",
@@ -175,9 +144,7 @@
       "responses": [
         "Studies to date suggest that the virus that causes COVID-19 is mainly transmitted through contact with respiratory droplets rather than through the air. "
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "no_symptoms_spread",
@@ -196,9 +163,7 @@
         "The main way the disease spreads is through respiratory droplets expelled by someone who is coughing. The risk of catching COVID-19 from someone with no symptoms at all is very low.",
         "Many people with COVID-19 experience only mild symptoms. This is particularly true at the early stages of the disease. It is therefore possible to catch COVID-19 from someone who has, for example, just a mild cough and does not feel ill. "
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "faeces_spread",
@@ -211,9 +176,7 @@
       "responses": [
         "The risk of catching COVID-19 from the feces of an infected person appears to be low. While initial investigations suggest the virus may be present in feces in some cases, spread through this route is not a main feature of the outbreak. "
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "protect_and_prevent",
@@ -236,9 +199,7 @@
         "Keep up to date on the latest COVID-19 hotspots (cities or local areas where COVID-19 is spreading widely).",
         "Self-isolate by staying at home if you begin to feel unwell, even with mild symptoms such as headache, low grade fever (37.3 C or above) and slight runny nose, until you recover."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "protect_and_prevent_highalert",
@@ -250,9 +211,7 @@
         "If you develop fever, cough and difficulty breathing, seek medical advice promptly as this may be due to a respiratory infection or other serious condition. Call in advance and tell your provider of any recent travel or contact with travelers.",
         "Self-isolate by staying at home if you begin to feel unwell, even with mild symptoms such as headache, low grade fever (37.3 C or above) and slight runny nose, until you recover."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "likelihood_of_infection",
@@ -268,9 +227,7 @@
         "For most people in most locations the risk of catching COVID-19 is still low. However, there are now places around the world (cities or areas) where the disease is spreading. For people living in, or visiting, these areas the risk of catching COVID-19 is higher.",
         "COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other countries. Unfortunately, new outbreaks can emerge rapidly. It’s important to be aware of the situation where you are or intend to go."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "worry",
@@ -291,9 +248,7 @@
         "We can channel our concerns into actions to protect ourselves, our loved ones and our communities.",
         "While we are still learning about how COVID-2019 affects people, older persons and persons with pre-existing medical conditions (such as high blood pressure, heart disease, lung disease, cancer or diabetes)  appear to develop serious illness more often than others. "
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "antibodies",
@@ -309,9 +264,7 @@
         "No. Antibiotics do not work against viruses, they only work on bacterial infections. COVID-19 is caused by a virus, so antibiotics do not work. ",
         "Antibiotics should not be used as a means of prevention or treatment of COVID-19. They should only be used as directed by a physician to treat a bacterial infection. "
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "treatment",
@@ -326,9 +279,7 @@
       "responses": [
         "Yes, a number of vaccines are currently being used for treating covid-19. Please register yourself in this site and take it from your nearest vaccination center"
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "sars",
@@ -344,9 +295,7 @@
         "SARS was more deadly but much less infectious than COVID-19. There have been no outbreaks of SARS anywhere in the world since 2003.",
         "No. The virus that causes COVID-19 and the one that caused the outbreak of Severe Acute Respiratory Syndrome (SARS) in 2003 are related to each other genetically, but the diseases they cause are quite different."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "mask",
@@ -363,9 +312,7 @@
         "If you are not ill or looking after someone who is ill then you are wasting a mask. ",
         "There is a world-wide shortage of masks, so WHO urges people to use masks wisely."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Mask Removal",
@@ -380,9 +327,7 @@
         "Remember, a mask should only be used by health workers, care takers, and individuals with respiratory symptoms, such as fever and cough.",
         "Before touching the mask, clean hands with an alcohol-based hand rub or soap and water"
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Incubation period",
@@ -395,9 +340,7 @@
         "Most estimates of the incubation period for COVID-19 range from 1-14 days, most commonly around five days. These estimates will be updated as more data become available.",
         "The “incubation period” means the time between catching the virus and beginning to have symptoms of the disease."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Animals",
@@ -415,9 +358,7 @@
         "To protect yourself, such as when visiting live animal markets, avoid direct contact with animals and surfaces in contact with animals",
         "Handle raw meat, milk or animal organs with care to avoid contamination of uncooked foods and avoid consuming raw or undercooked animal products"
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Pet",
@@ -431,9 +372,7 @@
         "While there has been one instance of a dog being infected in Hong Kong, to date, there is no evidence that a dog, cat or any pet can transmit COVID-19.",
         "COVID-19 is mainly spread through droplets produced when an infected person coughs, sneezes, or speaks."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Surface",
@@ -447,9 +386,7 @@
         "Studies suggest that coronaviruses (including preliminary information on the COVID-19 virus) may persist on surfaces for a few hours or up to several days. This may vary under different conditions (e.g. type of surface, temperature or humidity of the environment)",
         "If you think a surface may be infected, clean it with simple disinfectant to kill the virus and protect yourself and others."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Deliveries",
@@ -461,9 +398,7 @@
       "responses": [
         "Yes. The likelihood of an infected person contaminating commercial goods is low and the risk of catching the virus that causes COVID-19 from a package that has been moved, travelled, and exposed to different conditions and temperature is also low. "
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Dont",
@@ -472,14 +407,8 @@
         "Dont's in COVID-19",
         "Dont's in corona"
       ],
-      "responses": [
-        "Smoking",
-        "Wearing multiple masks",
-        "Taking antibiotics"
-      ],
-      "context": [
-        ""
-      ]
+      "responses": ["Smoking", "Wearing multiple masks", "Taking antibiotics"],
+      "context": [""]
     },
     {
       "tag": "Origin",
@@ -496,9 +425,7 @@
         "SARS-CoV, the virus which caused the SARS outbreak in 2003, jumped from an animal reservoir (civet cats, a farmed wild animal) to humans and then spread between humans",
         "Until the source of this virus is identified and controlled, there is a risk of reintroduction of the virus in the human population and the risk of new outbreaks like the ones we are currently experiencing."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Air",
@@ -511,9 +438,7 @@
       "responses": [
         "The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or speaks. These droplets are too heavy to hang in the air. They quickly fall on floors or surfaces. "
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Pregnancy",
@@ -529,33 +454,23 @@
         "Pregnant women should take the same precautions to avoid COVID-19 infection as other people",
         "Pregnant women and women who have recently delivered – including those affected by COVID-19 - should attend their routine care appointments"
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Pregnancy Testing",
-      "patterns": [
-        "Should pregnant women be tested for COVID-19"
-      ],
+      "patterns": ["Should pregnant women be tested for COVID-19"],
       "responses": [
         "Testing protocols and eligibility vary depending on where you live."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Unborn",
-      "patterns": [
-        "Can COVID-19 be passed from a woman to her unborn baby"
-      ],
+      "patterns": ["Can COVID-19 be passed from a woman to her unborn baby"],
       "responses": [
         "We still do not know if a pregnant woman with COVID-19 can pass the virus to her foetus or baby during pregnancy or delivery. To date, the virus has not been found in samples of amniotic fluid or breastmilk."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "Pregnancy birth",
@@ -565,9 +480,7 @@
       "responses": [
         "All pregnant women, including those with confirmed or suspected COVID-19 infections, have the right to high quality care before, during and after childbirth"
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "ceasarean",
@@ -577,33 +490,23 @@
       "responses": [
         "No. WHO advice is that caesarean sections should only be performed when medically justified."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "breastfeeding",
-      "patterns": [
-        "Can women with COVID-19 breastfeed"
-      ],
+      "patterns": ["Can women with COVID-19 breastfeed"],
       "responses": [
         "Yes. Women with COVID-19 can breastfeed if they wish to do so."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "baby",
-      "patterns": [
-        "Can I touch and hold my newborn baby if I have COVID-19"
-      ],
+      "patterns": ["Can I touch and hold my newborn baby if I have COVID-19"],
       "responses": [
         "Yes. Close contact and early, exclusive breastfeeding helps a baby to thrive. "
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "influenza",
@@ -620,9 +523,7 @@
         "Mortality for COVID-19 appears higher than for influenza, especially seasonal influenza.",
         "Those most at risk for severe influenza infection are children, pregnant women, elderly, those with underlying chronic medical conditions and those who are immunosuppressed."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "medical",
@@ -632,9 +533,7 @@
       "responses": [
         "While there are a number of therapeutics currently in clinical trials in China and more than 20 vaccines in development for COVID-19, there are currently no licensed vaccines or therapeutics for COVID-19."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "smoke_risk",
@@ -648,9 +547,7 @@
         "Smokers are likely to be more vulnerable to COVID-19 as the act of smoking means that fingers (and possibly contaminated cigarettes) are in contact with lips which increases the possibility of transmission of virus from hand to mouth.",
         "Smoking products such as water pipes often involve the sharing of mouth pieces and hoses, which could facilitate the transmission of COVID-19 in communal and social settings."
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     },
     {
       "tag": "gathering",
@@ -662,9 +559,7 @@
         "High profile international sporting events such as the Olympics or World Cups as well as international religious events such as the Hajj count as mass gatherings.",
         "An event counts as a “mass gatherings” if the number of people it brings together is so large that it has the potential to strain the planning and response resources of the health system in the community where it takes place. "
       ],
-      "context": [
-        ""
-      ]
+      "context": [""]
     }
   ]
 }
