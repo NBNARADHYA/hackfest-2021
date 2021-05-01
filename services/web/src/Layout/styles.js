@@ -1,4 +1,4 @@
-import {blue} from "@material-ui/core/colors";
+import { blue } from "@material-ui/core/colors";
 import {
   createMuiTheme,
   makeStyles,
@@ -6,17 +6,17 @@ import {
 } from "@material-ui/core/styles";
 
 let theme = createMuiTheme({
-  palette : {primary : blue, secondary : blue},
+  palette: { primary: blue, secondary: blue },
 });
 
 theme = responsiveFontSizes(theme);
 
 const useStyle = makeStyles(() => ({
-                              root : {
-                                width : "auto",
-                                backgroundColor : "#ffffff",
-                                color : '#000000',
-                              },
-                            }));
+  root: {
+    width: "auto",
+    backgroundColor: "#ffffff",
+    color: "#000000",
+  },
+}));
 
-export {theme, useStyle};
+export { theme, useStyle };
